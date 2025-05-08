@@ -1,0 +1,57 @@
+body{
+	background-color: black;
+}
+.contact {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+ 
+}
+
+.contactos{
+
+	background-color: rgb(98, 202, 124);
+	width: 60vw;
+	height: 60vh;
+	margin-bottom: 10px;
+}
+.contenedor_g{
+
+	position: relative;
+	display: flex;
+}
+.text-footer{
+
+	color: white;
+}
+
+.whatsapp{
+
+	color: green;
+}
+
+.instargram{
+
+	color: rgb(219, 12, 5);
+}
+
+.facebook{
+
+	color: lightblue;
+}
+
+.botones{
+
+
+	background-color: red;
+}
+
+
+.Vista{
+
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	align-content: center;
+}

@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido%}
+    
+    
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner ">
+      <div class=" bg-danger  carousel-item active row d-flex justify-content-center ">
+        <img src="{%static 'core/IMG/CRV-1.jpg' %}" class="d-block  p-5" alt="...">
+      </div>
+      <div class="carousel-item row d-flex justify-content-center">
+        <img src="{%static 'core/IMG/CRV-2.png' %}" class="d-block w-40% h-70 p-5" alt="...">
+      </div>
+      <div class="carousel-item row d-flex justify-content-center">
+        <img src="{%static 'core/IMG/CRV-3.png' %}" class="d-block w-50% h-70 p-5" alt="...">
+      </div>
+      <div class="bg-danger d-flex justify-content-center px-5">Aside de informacion</div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+{% endblock %}
