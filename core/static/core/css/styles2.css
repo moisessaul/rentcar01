@@ -1,29 +1,31 @@
 :root {
   --primary-color: #f8bf00;
-  --secondary-color: #333;
-  --text-light: #ffffff;
-  --text-dark: #333333;
-  --transition-speed: 0.3s;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+  background-color: rgb(230, 230, 233);
+}
+.logo{
+opacity: 0.5;
+}
+.logo img{
+opacity: 0.8;
+border-radius:100px;
+
 }
 
 /*--------- Navbar Styles ---------*/
 .custom-navbar {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   padding: 0.8rem 1rem;
   transition: all var(--transition-speed) ease;
 }
+
+/*-Espacio entre los botones LLAMANOS Y RENTAR*/
 .btn {
   margin: 10px;
-}
-.navbar-scrolled {
-  background: rgba(0, 0, 0, 0.95);
-  padding: 0.5rem 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
@@ -36,20 +38,7 @@ body {
 .navbar-brand:hover {
   transform: scale(1.05);
   text-shadow: 0 0 10px rgba(248, 191, 0, 0.5);
-}
-
-.custom-navbar .navbar-toggler {
-  border: none;
-  background-color: transparent;
-}
-
-.custom-navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.custom-navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 191, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  transition: all var(--transition-speed) ease;
+  color: #ffffff;
 }
 
 .custom-navbar .navbar-nav {
@@ -81,10 +70,7 @@ body {
   transition: all var(--transition-speed) ease;
 }
 
-.custom-navbar .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
-}
-
+/* Navegacion*/
 .custom-navbar .navbar-nav .nav-link:hover:before {
   width: 70%;
 }
@@ -150,34 +136,7 @@ body {
   animation-fill-mode: both;
 }
 
-.price-tag {
-  background-color: var(--primary-color);
-  color: var(--text-dark);
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  animation: fadeInUp 1s ease 0.6s;
-  animation-fill-mode: both;
-}
 
-.btn-gold {
-  background-color: var(--primary-color);
-  color: var(--text-dark);
-  border: none;
-  padding: 0.8rem 2rem;
-  font-weight: 600;
-  border-radius: 50px;
-  transition: all var(--transition-speed) ease;
-  animation: pulse 2s infinite;
-  animation-delay: 1s;
-}
-
-.btn-gold:hover {
-  background-color: #e6ae00;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(248, 191, 0, 0.3);
-}
 
 .hero-image {
   animation: fadeInRight 1s ease 0.6s;
@@ -190,6 +149,12 @@ body {
 
 .hero-image:hover {
   transform: perspective(1000px) rotateY(0deg);
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
+ 
 }
 
 /* Media Queries */
@@ -216,6 +181,9 @@ body {
   .custom-navbar .navbar-nav .nav-link:before {
     display: none;
   }
+  .contenedor_g{  
+      display: none;
+  }
 
   .hero-title {
     font-size: 2.5rem;
@@ -225,6 +193,14 @@ body {
     min-height: 500px;
     padding: 5rem 0 3rem;
   }
+  .content-mapa {
+  height: 300px;
+  
+}
+.mapa {
+  height: 300px;
+  
+}
 }
 
 @media (max-width: 576px) {
@@ -391,9 +367,10 @@ body {
 .content-mapa {
   display: flex;
   justify-content: center;
+   height: 300px;
 }
 .mapa {
-  height: 15%;
+ 
   width: 90%;
 }
 
@@ -426,17 +403,13 @@ footer {
 
 .footer-links a:hover {
   color: white;
+  font-size: 20px;
 }
 
-.social-icons a {
-  color: white;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  transition: color 0.3s ease;
-}
 
-.social-icons a:hover {
-  color: var(--accent-color);
+
+.redes:hover {
+ color: white;
 }
 
 .copyright {
@@ -445,7 +418,67 @@ footer {
   margin-top: 2rem;
   color: #aaa;
 }
+.bg_divs{
+background-color: #F49C2A;
+}
 .acerca_de {
-  width: 100px;
-  background-color: #c5a227;
+  width: 100%;
+  max-width: 900px;
+  margin: 100px auto; /* separación del top + centrado horizontal */
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #333333;
+}
+
+.contact {
+  width: 100%;
+  max-width: 900px;
+  margin: 100px auto; /* separación del top + centrado horizontal */
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #333333;
+}
+
+.txt_cont{ 
+  justify-content: center;
+  display: flex;
+align-items: center;
+
+}
+.bg_divs h2{
+  color: rgb(43, 5, 5);
+  margin-bottom:50px ;
+  text-align: center;
+}
+
+.btn_enviar{
+  height: 50px;
+  width: 90px;
+  margin-top: 0;
+}
+.social-icons{
+text-align: center;
+}
+
+.redes{
+font-size:50px ;
+padding-left: 50px;
+}
+.whatsapp{
+
+  color: #25D366;
+
+}
+.facebook{
+  color: #4267B2;
+}
+.instagram{
+color: #E1306C;
+}
+.telegram{
+
 }

@@ -3,12 +3,51 @@
 {% load static %}
 
 {% block contenido%}
-    <div class="contact">
-        <div class="contactos">
-            <p>esta es la sesion de contracctos</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum, reprehenderit excepturi laboriosam adipisci, sit assumenda est porro eveniet officia natus vitae, distinctio quasi beatae magnam quisquam placeat officiis eos?</p>
+
+<section class="">
+
+    <div class="bg_divs contact">
+        <div class="txt_cont">
+            <h2 class="col-12">Formulario de contacto</h2> <br>
         </div>
+
+        <form>
+            <div class=" mb-5 row g-3">
+                <div class="col">
+                    <input type="text" class="form-control"
+                        placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control"
+                        placeholder="Apellidos" aria-label="Apellidos">
+                </div>
+            </div>
+
+            <div class="mb-5">
+                <input type="text" class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Numero telefonico">
+            </div>
+
+            <div class="mb-5">
+                <input type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico">
+
+                <div id="emailHelp" class="form-text validationTextarea">Su correo no sera compartido con nadie mas que nosotros.</div>
+            </div>
+            <div class="mb-5">
+                <label for="exampleFormControlTextarea1"
+                    class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Escriba su mensaje aqui:"
+                    rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn_enviar btn btn-primary">Enviar</button>
+        </form>
+
     </div>
+    
+</section>
 
 {% endblock %}

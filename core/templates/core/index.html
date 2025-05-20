@@ -5,7 +5,7 @@
 {% block contenido%}
 
 <!--Carrucel-->
-<section class="contenedor_g container mt-4">
+<section class="e container mt-4">
   <div id="carouselAutos" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -33,14 +33,14 @@
 </section>
 
 <!--Galeria-->
-<section class="container text-center my-5">
+<section class="col-1container text-center my-5">
   <h2>Vehiculos disponibles</h2>
 
   <!--Primer bloque-->
   <div class=" row d-flex justify-content-center">
 
     <div class="card col-xl-5 col-md-4 col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+      <img class="img" 
         src="{%static 'core/IMG/CRV-2.png' %}" class="card-img-top " alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -52,7 +52,7 @@
       <div class=" mb-5">
         <a href="#">
 
-          <button type="button" class="btn btn-secondary btn-outline-dark"
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
             data-bs-target="#staticBackdrop">
             <a href="{%url 'vehiculo_1' %}">Ver mas 1</a>
           </button>
@@ -61,8 +61,8 @@
       </div>
     </div>
 
-    <div class="card col-m-1 col-xl-5 col-md-4  col-sm-5">
-      <img class="img" style=" height: 50%"
+    <div class="card col-m-1 col-xl-5 col-md-4  col-sm-5 m-1">
+      <img class="img" 
         src="{%static 'core/IMG/CRV-1.jpg' %}" class="card-img-top" alt="...">
       <div class="card-body ">
         <h5 class="card-title">Card title</h5>
@@ -73,7 +73,7 @@
       </div>
       <div class=" mb-5">
         <a href="#">
-          <button type="button" class="btn btn-secondary btn-outline-dark"
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
             data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Ver mas 2
           </button>
@@ -83,30 +83,42 @@
     </div>
 
     <div class="card col-xl-5 col-md-4  col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+      <img class="img" 
         src="{%static 'core/IMG/CRV-3.png' %}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">3 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's content</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+       <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
 
     <div class="card col-xl-5 col-md-4  col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+      <img class="img" 
         src="{%static 'core/IMG/CRV-3.png' %}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">4 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's content</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+        <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
   </div>
@@ -115,70 +127,88 @@
   <div class="row d-flex justify-content-center">
 
     <div class="card col-xl-5 col-md-4 col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+      <img class="img"
         src="{%static 'core/IMG/CRV-2.png' %}" class="card-img-top " alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">5 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's
           content.</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+        <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
 
     <div class="card m-1 col-xl-5 col-md-4  col-sm-5">
-      <img class="img" style=" height: 50%"
+      <img class="img"
         src="{%static 'core/IMG/CRV-1.jpg' %}" class="card-img-top" alt="...">
       <div class="card-body ">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">6 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's
           content.</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+       <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
 
-    <div class="card col-xl-5 col-md-4  col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+    <div class="card m-1 col-xl-5 col-md-4  col-sm-5 ">
+      <img class="img"
         src="{%static 'core/IMG/CRV-3.png' %}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">7 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's content</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+        <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
 
-    <div class="card col-xl-5 col-md-4  col-sm-5 m-1 ">
-      <img class="img" style=" height: 50%"
+    <div class="card m-1 col-xl-5 col-md-4  col-sm-5 ">
+      <img class="img"
         src="{%static 'core/IMG/CRV-3.png' %}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title
+        <p class="card-text">8 Some quick example text to build on the card title
           and make up the bulk of the card's content Some quick example text to
           build on the card title and make up the bulk of the card's content</p>
       </div>
-      <div class=" mb-5">
-        <a href="#" class="btn btn-secondary btn-outline-dark">Ver mas</a>
+        <div class=" mb-5">
+        <a href="#">
+          <button type="button" class="button btn btn-secondary btn-outline-dark"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Ver mas 2
+          </button>
+
+        </a>
       </div>
     </div>
   </div>
 
 </section>
-<div class="content-mapa">
-  <iframe class="mapa"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13149.696200613262!2d-68.48287497246612!3d18.73869364601389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sdo!4v1746562740416!5m2!1ses!2sdo"
-    width="400" height="300" style="border:0;" allowfullscreen loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
 
 {% endblock %}

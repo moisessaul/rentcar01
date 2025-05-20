@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'core/home.html')
+def index(request):
+    return render(request, 'core/index.html')
 
 def acerca_de(request):
     return render(request, 'core/acerca_de.html')

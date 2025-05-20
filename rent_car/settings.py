@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-=^uu3bt&j_8gcglowg(f@pn+nz7fphb-!wvelw8ha88v7n^&*u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',
+                ]
 
 
 # Application definition
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'rent_car.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
